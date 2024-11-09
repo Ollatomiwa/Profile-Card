@@ -6,8 +6,15 @@
         <p>{{ description }}</p>
         <p>{{ intro }}</p>
         <div class="button-group">
-          <button @click="goToProfile">Profile</button>
-          <button @click="followUser">Follow</button>
+            <!-- Profile Link -->
+        <a :href="profileUrl" target="_blank" rel="noopener noreferrer">
+          <button>Profile</button>
+        </a>
+        
+        <!-- Follow Link -->
+        <a :href="followUrl" target="_blank" rel="noopener noreferrer">
+            <button>Follow</button>
+        </a>
         </div>
       </div>
     </div>
@@ -24,13 +31,8 @@
   const intro = ref("I build responsive webiste with Vue3");
   
   // Handlers for button actions
-  const goToProfile = () => {
-    alert("Navigating to profile...");
-  };
-  
-  const followUser = () => {
-    alert("User followed!");
-  };
+    const profileUrl = ref("https://computlife.com.ng"); // Profile link
+    const followUrl = ref("https://github.com/Ollatomiwa"); // Follow link
   </script>
   
   <style scoped>
@@ -58,7 +60,7 @@
   .profile-photo {
     width: 100px;
     height: 100px;
-    border-radius: 40%;
+    border-radius: 60%;
     object-fit: cover;
   }
   
