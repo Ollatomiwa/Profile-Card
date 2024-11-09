@@ -28,7 +28,7 @@
   const photoUrl = ref(photo); // Replace with your photo URL
   const name = ref("Ollatomiwa");
   const description = ref("Web Developer & Designer");
-  const intro = ref("I build responsive webiste with Vue3");
+  const intro = ref("I build responsive websites with Vue3 and NodeJs");
   
   // Handlers for button actions
     const profileUrl = ref("https://computlife.com.ng"); // Profile link
